@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+	<meta name='description' content='Les liens et menu en HTML'>
+	<meta name='author' content='Sonia Bougamha'>
+	<title>Les liens et menus</title>
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald:wght@300&display=swap" rel="stylesheet">
+	<!-- CDN de Font-awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Mon CSS-->
+	<link rel='stylesheet' href='css/style.css'>
+</head>
+
+<body>
+	<header>
+		<div id="logo">
+			<a href="#logo">
+				<button type="button">
+					<i class="fas fa-arrow-circle-up"></i>
+				</button>
+			</a>
+
+			<img src="img/logo.png" alt="css 3, html 5">
+		</div>
+
+		<div id="slogan">
+			<h1>Mon premier site HTML/CSS</h1>
+		</div>
+
+		<div id="social">
+			<a href="https://www.facebook.com/" target="_blank">
+				<i class="fab fa-facebook-square"></i>
+			</a>
+
+			<a href="http://www.instagram.com/" target="_blank">
+				<i class="fab fa-instagram-square"></i>
+			</a>
+		</div>
+
+		<div class="clear"></div>
+	</header>
+
+	<nav>
+		<div class="ancreNav">
+			<a href="index.html">Structure</a>
+			<a href="texte.html">Textes</a>
+			<a href="selecteur.html">Sélecteurs</a>
+			<a href="image.html">Images</a>
+			<a href="position.html">Positions</a>
+			<a href="tableau.html">Tableaux</a>
+			<a href="zoning.html">Zoning</a>
+			<a href="listes.html">Listes</a>
+			<a href="lien_menu.html" class="activ">Liens & menus</a>
+			<a href="formulaire.html">Formulaires</a>
+			<a href="multimedia.html">Multimedias</a>
+			<a href="animation.html">Animations</a>
+		</div>
+	</nav>
+
+	<main>
+		<h2>Liens & menus</h2>
+
+		<div class="ancre">
+			<a href="#lien">Les liens</a>
+			<a href="#menu">Les menus</a>
+			<a href="#menuDeroulant">Les menus déroulant</a>
+		</div>
+
+		<section id="lien">
+			<h3>Les liens</h3>
+
+			<a href="https://codepen.io" target="_blank" title="Se rendre sur le site CodePen, s'ouvre dans un nouvel onglet">
+				CodePen is a social development environment for front-end designers and developers
+			</a>
+			<br><!-- différent sur firefox et chrome-->
+
+			<a href="file/cv.doc">Télécharger mon CV</a>
+			<br>
+
+			<a href="file/cv.pdf">Voir mon CV</a>
+			<br>
+
+			<a href="#" onclick="window.print()">Imprimer la page</a>
+			<br>
+
+			<p>
+				Cliquez 
+				<a href="index.html">ici</a> 
+				pour vous rendre à la page d'accueil.
+			</p>
+		</section>
+
+		<section id="menu">
+			<h3>Les menus</h3>
+
+			<nav>
+				<ul>
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#">Parcours</a></li>
+					<li><a href="#">Comptétences</a></li>
+					<li><a href="#">Réalisations</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</section>
+
+		<section id="menuDeroulant">
+			<h3>Les menus déroulant</h3>
+
+			<nav>
+				<ul class="niveau1">
+					<li><a href="#">Accueil</a></li>
+
+					<li class="sousMenu">
+						<a href="#">Formation</a>
+
+						<ul class="niveau2">
+							<li><a href="#">Etudiant</a></li>
+							<li><a href="#">Emploi du temps</a></li>
+							<li><a href="#">Recherche d'emploi</a></li>
+							<li><a href="#">Documents</a></li>
+						</ul>
+					</li>
+
+					<li><a href="#">Informations</a></li>
+
+					<li class="sousMenu">
+						<a href="#">Cours</a>
+
+						<ul class="niveau2">
+							<li><a href="#">Internet</a></li>
+							<li><a href="#">HTML / CSS</a></li>
+							<li><a href="#">CMS</a></li>
+							<li><a href="#">Stats</a></li>
+							<li><a href="#">Réseaux sociaux</a></li>
+							<li><a href="#">Référencement</a></li>
+							<li><a href="#">Marketing</a></li>
+							<li><a href="#">Cahier des charges</a></li>
+							<li><a href="#">Photoshop</a></li>
+						</ul>
+					</li>
+
+					<li><a href="#">Mon CV</a></li>
+				</ul>
+			</nav>
+		</section>
+	</main>
+
+	<footer>
+		<!-- liens administratifs, mentions légales, plan du site, cgu et cgv, contact, copyright-->
+		<small>&copy; 2021 Le PoleS</small>
+	</footer>
+
+</body>
+
+</html>

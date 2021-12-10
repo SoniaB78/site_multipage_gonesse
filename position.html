@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+	<meta name='description' content='Mes position en HTML / CSS'>
+	<meta name='author' content='Sonia Bougamha'>
+	<title>Ma page positions</title>
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald:wght@300&display=swap"
+		rel="stylesheet">
+	<!-- CDN de Font-awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Mon CSS-->
+	<link rel='stylesheet' href='css/style.css'>
+</head>
+
+<body>
+	<header>
+		<div id="logo">
+			<a href="#logo">
+				<button type="button">
+					<i class="fas fa-arrow-circle-up"></i>
+				</button>
+			</a>
+
+			<img src="img/logo.png" alt="css 3, html 5">
+		</div>
+
+		<div id="slogan">
+			<h1>Mon premier site HTML/CSS</h1>
+		</div>
+
+		<div id="social">
+			<a href="https://www.facebook.com/" target="_blank">
+				<i class="fab fa-facebook-square"></i>
+			</a>
+
+			<a href="http://www.instagram.com/" target="_blank">
+				<i class="fab fa-instagram-square"></i>
+			</a>
+		</div>
+
+		<div class="clear"></div>
+	</header>
+
+	<nav>
+		<div class="ancreNav">
+			<a href="index.html">Structure</a>
+			<a href="texte.html">Textes</a>
+			<a href="selecteur.html">Sélecteurs</a>
+			<a href="image.html">Images</a>
+			<a href="position.html" class="activ">Positions</a>
+			<a href="tableau.html">Tableaux</a>
+			<a href="zoning.html">Zoning</a>
+			<a href="listes.html">Listes</a>
+			<a href="lien_menu.html">Liens & menus</a>
+			<a href="formulaire.html">Formulaires</a>
+			<a href="multimedia.html">Multimedias</a>
+			<a href="animation.html">Animations</a>
+		</div>
+	</nav>
+
+	<main>
+		<h2>Positions</h2>
+
+		<section>
+			<h3>Centrer un élément de type block</h3>
+			<div class="centre"></div>
+		</section>
+
+		<section>
+			<h3>Position Absolute</h3>
+			<p>Carré JAUNE ! Regardez en haut !</p>
+			<div class="absolute"></div>
+		</section>
+
+		<section>
+			<h3>Position Relative</h3>
+			<div class="relative">
+				<div></div>
+			</div>
+		</section>
+
+		<section>
+			<h3>Position Fixed</h3>
+			<p>Bouton retour vers le haut</p>
+			<a href="#logo">
+				<button type="button">
+					<i class="fas fa-arrow-circle-up"></i>
+				</button>
+			</a>
+		</section>
+
+		<section>
+			<h3>Le pourcentage</h3>
+			<div class="trente">30%</div>
+			<div class="cinquante">50%</div>
+			<div class="cent">100%</div>
+		</section>
+
+		<section>
+			<h3>L'attribut Float</h3>
+			<div class="float">1</div>
+			<div class="float">2</div>
+			<div class="float">3</div>
+			<div class="float">4</div>
+			<div class="float clear">5</div>
+			<div class="float">6</div>
+			<div class="float">7</div>
+			<div class="float clear">8</div>
+			<div class="float">9</div>
+			<div class="float clear">10</div>
+		</section>
+
+		<div class="clear"></div>
+
+		<section>
+			<h3>Flexbox</h3>
+			<article class="flex">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+				<div>4</div>
+			</article>
+		</section>
+	</main>
+
+	<footer>
+		<!-- liens administratifs, mentions légales, plan du site, cgu et cgv, contact, copyright-->
+		<small>&copy; 2021 Le PoleS</small>
+	</footer>
+
+</body>
+
+</html>

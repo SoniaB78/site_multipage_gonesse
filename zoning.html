@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+	<meta name='description' content='Mon zoning en HTML / CSS'>
+	<meta name='author' content='Sonia Bougamha'>
+	<title>Ma page zoning</title>
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald:wght@300&display=swap" rel="stylesheet">
+	<!-- CDN de Font-awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Mon CSS-->
+	<link rel='stylesheet' href='css/style.css'>
+</head>
+
+<body>
+	<header>
+		<div id="logo">
+			<a href="#logo">
+				<button type="button">
+					<i class="fas fa-arrow-circle-up"></i>
+				</button>
+			</a>
+
+			<img src="img/logo.png" alt="css 3, html 5">
+		</div>
+
+		<div id="slogan">
+			<h1>Mon premier site HTML/CSS</h1>
+		</div>
+
+		<div id="social">
+			<a href="https://www.facebook.com/" target="_blank">
+				<i class="fab fa-facebook-square"></i>
+			</a>
+
+			<a href="http://www.instagram.com/" target="_blank">
+				<i class="fab fa-instagram-square"></i>
+			</a>
+		</div>
+
+		<div class="clear"></div>
+	</header>
+
+	<nav>
+		<div class="ancreNav">
+			<a href="index.html">Structure</a>
+			<a href="texte.html">Textes</a>
+			<a href="selecteur.html">Sélecteurs</a>
+			<a href="image.html">Images</a>
+			<a href="position.html">Positions</a>
+			<a href="position.html">Positions</a>
+			<a href="tableau.html">Tableaux</a>
+			<a href="zoning.html" class="activ">Zoning</a>
+			<a href="listes.html">Listes</a>
+			<a href="lien_menu.html">Liens & menus</a>
+			<a href="formulaire.html">Formulaires</a>
+			<a href="multimedia.html">Multimedias</a>
+			<a href="animation.html">Animations</a>
+		</div>
+	</nav>
+
+	<main>
+		<!-- ---------------ZONING 1----------------- -->
+		<h2>Zoning</h2>
+
+		<section>
+			<h3>Zoning 1</h3>
+
+			<div id="zoning1">
+				<header>
+					<p>Zone du haut</p>
+				</header>
+
+				<aside>
+					Zone de gauche
+				</aside>
+
+				<section>
+					Zone de droite
+				</section>
+
+				<div class="clear"></div>
+			</div>
+		</section>
+
+		<!-- ---------------ZONING 2----------------- -->
+		<section>
+			<h3>Zoning 2</h3>
+
+			<div id="zoning2">
+				<header>
+					<p>Zone du haut <br>  HEADER</p>
+				</header>
+
+				<aside>
+					<p>Zone de gauche <br> ASIDE</p>
+				</aside>
+
+				<section class="middle">
+					<p>Zone du milieu <br> MIDDLE</p>
+				</section>
+
+				<aside>
+					<p>Zone de droite <br> ASIDE</p>
+				</aside>
+
+				<div class="clear"></div>
+			</div>
+		</section>
+
+		<!-- ---------------ZONING 3----------------- -->
+		<section>
+			<h3>Zoning 3</h3>
+
+			<div id="zoning3">
+				<section>
+					<p>Gauche <br> SECTION</p>
+				</section>
+
+				<section>
+					<p>Droite <br> SECTION</p>
+				</section>
+
+				<footer>
+					<p>Bas <br>FOOTER</p>
+				</footer>
+
+				<div class="clear"></div>
+			</div>
+		</section>
+
+		<!-- ---------------ZONING 4----------------- -->
+		<section>
+			<h3>Zoning 4</h3>
+
+			<div id="zoning4">
+				<header>
+					<p>HEADER</p>
+				</header>
+
+				<nav>
+					<p>NAV</p>
+				</nav>
+
+				<section>
+					<p>SECTION</p>
+				</section>
+
+				<footer>
+					<p>FOOTER</p>
+				</footer>
+
+				<div class="clear"></div>
+			</div>
+		</section>
+
+		<!-- ---------------ZONING 5----------------- -->
+		<section>
+			<h3>Zoning 5</h3>
+
+			<div id="zoning5">
+				<header>
+					<p>HEADER</p>
+				</header>
+
+				<nav>
+					<p>NAV</p>
+				</nav>
+
+				<section class="section">
+					<div class="z1">
+						<p>Zone1</p>
+					</div>
+
+					<div class="z2">
+						<p>Zone2</p>
+					</div>
+
+					<div class="z3">
+						<p>Zone3</p>
+					</div>
+
+					<div class="z4">
+						<p>Zone4</p>
+					</div>
+
+					<div class="clear"></div>
+				</section>
+
+				<footer>
+					<p>FOOTER</p>
+				</footer>
+				<div class="clear"></div>
+			</div>
+		</section>
+
+		<!-- ---------------ZONING 6----------------- -->
+		<section>
+			<h3>Zoning 6</h3>
+			<div id="zoning6">
+				<header>
+					<div class="haut1">haut 1</div>
+					<div class="haut2">haut 2</div>
+					<div class="haut3">haut 3</div>
+					<div class="clear"></div>
+				</header>
+
+				<nav>
+					Menu
+				</nav>
+
+				<aside>
+					Zone de gauche
+				</aside>
+
+				<section>
+					<div class="a">A</div>
+					<div class="b">B</div>
+					<div class="clear"></div>
+				</section>
+
+				<section class="slideshow">
+					Slideshow
+				</section>
+
+				<section>
+					<div class="c">C</div>
+					<div class="d">D</div>
+					<div class="e">E</div>
+					<div class="f">F</div>
+					<div class="clear"></div>
+				</section>
+
+				<footer class="clear">
+					Bas
+				</footer>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<!-- liens administratifs, mentions légales, plan du site, cgu et cgv, contact, copyright-->
+		<small>&copy; 2021 Le PoleS</small>
+	</footer>
+
+</body>
+
+</html>
